@@ -1,0 +1,11 @@
+<html>
+	<head>
+		<meta name="color-scheme" content="light dark">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<pre>{   "$schema": "https://json-schema.org/draft-07/schema#",   "description": "A shadcn registry of components, hooks, pages, etc.",   "type": "object",   "properties": {     "name": {       "type": "string"     },     "homepage": {       "type": "string"     },     "items": {       "type": "array",       "items": {         "$ref": "https://ui.shadcn.com/schema/registry-item.json"       }     }   },   "required": ["name", "homepage", "items"],   "uniqueItems": true,   "minItems": 1 }
+		</pre>
+		<div class="json-formatter-container"></div>
+	</body>
+</html>
